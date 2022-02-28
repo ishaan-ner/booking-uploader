@@ -21,9 +21,35 @@
   font-size: large;
 }
 
+.App-main {
+  padding: 40px 120px;
+}
+
+.App-booking-container {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  padding: 16px;
+}
+
+.App-booking, .App-new-booking {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #6da4fc;
+  border-radius: 4px;
+  background: #bad1f7;
+  min-height: 200px;
+}
+
+.App-new-booking {
+  border: 2px solid #57eb7e;
+  background: #bff5cd
+}
+
 .App-booking-time {
   display: inline-block;
-  width: 400px;
 }
 
 .App-booking-duration {
@@ -35,3 +61,42 @@
   display: inline-block;
   width: 80px;
 }
+
+.App-booking-invalid {
+  background: #f28f88;
+  border: 2px solid #ed6258;
+}
+
+.App-save-button {
+  margin-top: 16px;
+  padding: 8px;
+  border: 1px solid #0f991d;
+  border-radius:4px;
+  background: #369c41;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.App-save-button:hover {
+  background: #60a668;
+}
+
+.App-valid-indicator,  .App-invalid-indicator {
+  padding-right: 12px;
+  margin:0 12px 0 4px;
+}
+
+.App-valid-indicator{
+  border: 2px solid #57eb7e;
+  background: #bff5cd;
+}
+
+
+.App-invalid-indicator {
+  background: #f28f88;
+  border: 2px solid #ed6258;
+}
+
+
+
